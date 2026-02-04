@@ -1,0 +1,18 @@
+Dataset: PESTS (Fa-En)
+Task: Cross-Lingual Semantic Textual Similarity
+Metric: Pearson Correlation
+
+Baseline:
+- Model: paraphrase-xlm-r-multilingual-v1
+
+Ensemble:
+- Models: XLM-R, MPNet, MiniLM
+- Method: Average cosine similarity
+
+PCA Analysis:
+- Dimensions tested: 50, 100, 200, 300, 400
+- Best performance at: 200 dimensions
+
+Hardware:
+- CPU only
+- Python 3.10
